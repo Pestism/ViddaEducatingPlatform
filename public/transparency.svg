@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 860" font-family="Inter, Segoe UI, sans-serif">
+
+  <!-- ── BACKGROUND ── -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="glowBlue" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#60a5fa" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="glowPurple" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#a78bfa" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arrowW" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <rect width="1100" height="860" fill="url(#bgGrad)" rx="14"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#ffffff" stroke-opacity="0.03" stroke-width="1">
+    <line x1="0" y1="100" x2="1100" y2="100"/>
+    <line x1="0" y1="200" x2="1100" y2="200"/>
+    <line x1="0" y1="300" x2="1100" y2="300"/>
+    <line x1="0" y1="400" x2="1100" y2="400"/>
+    <line x1="0" y1="500" x2="1100" y2="500"/>
+    <line x1="0" y1="600" x2="1100" y2="600"/>
+    <line x1="0" y1="700" x2="1100" y2="700"/>
+    <line x1="275" y1="0" x2="275" y2="860"/>
+    <line x1="550" y1="0" x2="550" y2="860"/>
+    <line x1="825" y1="0" x2="825" y2="860"/>
+  </g>
+
+  <!-- ── TITLE ── -->
+  <text x="550" y="46" text-anchor="middle" font-size="26" font-weight="800" fill="white" filter="url(#glow)">Vidda Solutions</text>
+  <text x="550" y="72" text-anchor="middle" font-size="16" fill="#94a3b8" font-weight="400" letter-spacing="3">TRANSPARENCY ARCHITECTURE</text>
+  <line x1="200" y1="82" x2="900" y2="82" stroke="#334155" stroke-width="1"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 1 — REGULATORY TRANSPARENCY
+  ══════════════════════════════════════════════════════ -->
+  <rect x="30" y="96" width="1040" height="110" rx="10" fill="url(#glowPurple)" stroke="#7c3aed" stroke-width="1.5"/>
+  <rect x="30" y="96" width="6" height="110" rx="3" fill="#7c3aed"/>
+
+  <text x="58" y="120" font-size="11" font-weight="700" fill="#a78bfa" letter-spacing="2">LAYER 1 — REGULATORY TRANSPARENCY</text>
+  <text x="58" y="140" font-size="13" font-weight="600" fill="white">Every training decision is grounded in AMLR 2024/1624</text>
+  <text x="58" y="158" font-size="11" fill="#94a3b8">The regulation is not a black-box reference — it is retrieved, quoted, and shown inline next to the AI output that cites it.</text>
+
+  <!-- Article pills -->
+  <rect x="58" y="170" width="110" height="24" rx="5" fill="#4c1d95"/>
+  <text x="113" y="186" text-anchor="middle" font-size="10" fill="#e9d5ff" font-weight="600">Art. 9 — Controls</text>
+
+  <rect x="178" y="170" width="110" height="24" rx="5" fill="#4c1d95"/>
+  <text x="233" y="186" text-anchor="middle" font-size="10" fill="#e9d5ff" font-weight="600">Art. 10 — Risk Assess.</text>
+
+  <rect x="298" y="170" width="110" height="24" rx="5" fill="#4c1d95"/>
+  <text x="353" y="186" text-anchor="middle" font-size="10" fill="#e9d5ff" font-weight="600">Art. 11 — Functions</text>
+
+  <rect x="418" y="170" width="110" height="24" rx="5" fill="#4c1d95"/>
+  <text x="473" y="186" text-anchor="middle" font-size="10" fill="#e9d5ff" font-weight="600">Art. 12 — Training</text>
+
+  <rect x="538" y="170" width="110" height="24" rx="5" fill="#4c1d95"/>
+  <text x="593" y="186" text-anchor="middle" font-size="10" fill="#e9d5ff" font-weight="600">Art. 13 — Integrity</text>
+
+  <rect x="658" y="170" width="80" height="24" rx="5" fill="#4c1d95"/>
+  <text x="698" y="186" text-anchor="middle" font-size="10" fill="#e9d5ff" font-weight="600">Art. 14</text>
+
+  <rect x="748" y="170" width="80" height="24" rx="5" fill="#4c1d95"/>
+  <text x="788" y="186" text-anchor="middle" font-size="10" fill="#e9d5ff" font-weight="600">Art. 15</text>
+
+  <rect x="860" y="166" width="190" height="32" rx="6" fill="#7c3aed"/>
+  <text x="955" y="179" text-anchor="middle" font-size="10" fill="white" font-weight="700">RAG: Vector Search</text>
+  <text x="955" y="192" text-anchor="middle" font-size="9" fill="#e9d5ff">quotes surfaced with highlights</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 2 — AI DECISION TRANSPARENCY
+  ══════════════════════════════════════════════════════ -->
+  <line x1="550" y1="206" x2="550" y2="224" stroke="#64748b" stroke-width="2" marker-end="url(#arrowW)"/>
+
+  <rect x="30" y="224" width="1040" height="120" rx="10" fill="url(#glowBlue)" stroke="#2563eb" stroke-width="1.5"/>
+  <rect x="30" y="224" width="6" height="120" rx="3" fill="#2563eb"/>
+
+  <text x="58" y="248" font-size="11" font-weight="700" fill="#60a5fa" letter-spacing="2">LAYER 2 — AI DECISION TRANSPARENCY (ViddaGPT)</text>
+  <text x="58" y="268" font-size="13" font-weight="600" fill="white">The AI explains WHAT it decided and WHY — in structured, auditable output</text>
+
+  <rect x="58" y="278" width="300" height="54" rx="7" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="208" y="298" text-anchor="middle" font-size="11" font-weight="600" fill="#93c5fd">7-Step Framework Output</text>
+  <text x="208" y="313" text-anchor="middle" font-size="10" fill="#7dd3fc">title · summary · details</text>
+  <text x="208" y="327" text-anchor="middle" font-size="10" fill="#7dd3fc">articles[] · evidence · excerpts[]</text>
+
+  <rect x="378" y="278" width="300" height="54" rx="7" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="528" y="298" text-anchor="middle" font-size="11" font-weight="600" fill="#93c5fd">Training Module Rationale</text>
+  <text x="528" y="313" text-anchor="middle" font-size="10" fill="#7dd3fc">reason_assigned (per module)</text>
+  <text x="528" y="327" text-anchor="middle" font-size="10" fill="#7dd3fc">amlr_articles · KSJ competencies</text>
+
+  <rect x="698" y="278" width="362" height="54" rx="7" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="879" y="298" text-anchor="middle" font-size="11" font-weight="600" fill="#93c5fd">OpenRouter Training Path Generation</text>
+  <text x="879" y="313" text-anchor="middle" font-size="10" fill="#7dd3fc">provider · model · generated_at exposed in UI</text>
+  <text x="879" y="327" text-anchor="middle" font-size="10" fill="#7dd3fc">Q1–Q4 structure · mandatory/optional flags</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 3 — GOVERNANCE TRANSPARENCY
+  ══════════════════════════════════════════════════════ -->
+  <line x1="550" y1="344" x2="550" y2="362" stroke="#64748b" stroke-width="2" marker-end="url(#arrowW)"/>
+
+  <rect x="30" y="362" width="1040" height="136" rx="10" fill="#052e16" fill-opacity="0.6" stroke="#16a34a" stroke-width="1.5"/>
+  <rect x="30" y="362" width="6" height="136" rx="3" fill="#16a34a"/>
+
+  <text x="58" y="386" font-size="11" font-weight="700" fill="#4ade80" letter-spacing="2">LAYER 3 — GOVERNANCE TRANSPARENCY (Human-in-the-Loop)</text>
+  <text x="58" y="406" font-size="13" font-weight="600" fill="white">Every AI output is visible, reviewable, and modifiable before it becomes policy</text>
+
+  <rect x="58" y="416" width="300" height="70" rx="7" fill="#14532d" stroke="#22c55e" stroke-width="1"/>
+  <text x="208" y="434" text-anchor="middle" font-size="10" font-weight="700" fill="#86efac">CHECKPOINT A</text>
+  <text x="208" y="450" text-anchor="middle" font-size="10" fill="#bbf7d0">Steps 1–3: Role Function, Responsibilities</text>
+  <text x="208" y="465" text-anchor="middle" font-size="10" fill="#bbf7d0">Inherent AML Risk — manager sees AI rationale</text>
+  <text x="208" y="480" text-anchor="middle" font-size="9" fill="#4ade80">Approve  /  Modify inline  /  Reject + Reset</text>
+
+  <rect x="378" y="416" width="300" height="70" rx="7" fill="#14532d" stroke="#22c55e" stroke-width="1"/>
+  <text x="528" y="434" text-anchor="middle" font-size="10" font-weight="700" fill="#86efac">CHECKPOINT B</text>
+  <text x="528" y="450" text-anchor="middle" font-size="10" fill="#bbf7d0">Steps 4–6: Risk Themes, Obligations, KSJ</text>
+  <text x="528" y="465" text-anchor="middle" font-size="10" fill="#bbf7d0">All 7 steps must resolve before path is built</text>
+  <text x="528" y="480" text-anchor="middle" font-size="9" fill="#4ade80">MODIFIED badge shown if AI output was changed</text>
+
+  <rect x="698" y="416" width="362" height="70" rx="7" fill="#14532d" stroke="#22c55e" stroke-width="1"/>
+  <text x="879" y="434" text-anchor="middle" font-size="10" font-weight="700" fill="#86efac">CHECKPOINT C</text>
+  <text x="879" y="450" text-anchor="middle" font-size="10" fill="#bbf7d0">Step 7: Training Focus locked behind all-approved</text>
+  <text x="879" y="465" text-anchor="middle" font-size="10" fill="#bbf7d0">Material approval (per module) required before LMS</text>
+  <text x="879" y="480" text-anchor="middle" font-size="9" fill="#4ade80">Employee email bound — training_assigned logged</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 4 — AUDIT TRANSPARENCY
+  ══════════════════════════════════════════════════════ -->
+  <line x1="550" y1="498" x2="550" y2="516" stroke="#64748b" stroke-width="2" marker-end="url(#arrowW)"/>
+
+  <rect x="30" y="516" width="1040" height="118" rx="10" fill="#1c1917" fill-opacity="0.7" stroke="#d97706" stroke-width="1.5"/>
+  <rect x="30" y="516" width="6" height="118" rx="3" fill="#d97706"/>
+
+  <text x="58" y="540" font-size="11" font-weight="700" fill="#fbbf24" letter-spacing="2">LAYER 4 — AUDIT TRANSPARENCY (Append-only Log)</text>
+  <text x="58" y="560" font-size="13" font-weight="600" fill="white">Every action — by human or AI — is written to an immutable audit trail</text>
+
+  <rect x="58" y="570" width="1002" height="52" rx="6" fill="#0c0a09" stroke="#78350f" stroke-width="1"/>
+
+  <text x="78" y="590" font-size="10" fill="#4ade80" font-family="monospace">role_imported</text>
+  <line x1="175" y1="580" x2="175" y2="614" stroke="#292524" stroke-width="1"/>
+  <text x="185" y="590" font-size="10" fill="#4ade80" font-family="monospace">analysis_completed</text>
+  <line x1="320" y1="580" x2="320" y2="614" stroke="#292524" stroke-width="1"/>
+  <text x="330" y="590" font-size="10" fill="#60a5fa" font-family="monospace">step3_modified</text>
+  <line x1="450" y1="580" x2="450" y2="614" stroke="#292524" stroke-width="1"/>
+  <text x="460" y="590" font-size="10" fill="#4ade80" font-family="monospace">step3_approved</text>
+  <line x1="580" y1="580" x2="580" y2="614" stroke="#292524" stroke-width="1"/>
+  <text x="590" y="590" font-size="10" fill="#fbbf24" font-family="monospace">training_path_generated</text>
+  <line x1="760" y1="580" x2="760" y2="614" stroke="#292524" stroke-width="1"/>
+  <text x="770" y="590" font-size="10" fill="#f472b6" font-family="monospace">material_approved</text>
+  <line x1="890" y1="580" x2="890" y2="614" stroke="#292524" stroke-width="1"/>
+  <text x="900" y="590" font-size="10" fill="#f87171" font-family="monospace">scenario_decision</text>
+
+  <text x="78" y="607" font-size="9" fill="#57534e" font-family="monospace">actor: system</text>
+  <text x="185" y="607" font-size="9" fill="#57534e" font-family="monospace">actor: system</text>
+  <text x="330" y="607" font-size="9" fill="#57534e" font-family="monospace">actor: user</text>
+  <text x="460" y="607" font-size="9" fill="#57534e" font-family="monospace">actor: user</text>
+  <text x="590" y="607" font-size="9" fill="#57534e" font-family="monospace">actor: openrouter</text>
+  <text x="770" y="607" font-size="9" fill="#57534e" font-family="monospace">actor: manager</text>
+  <text x="900" y="607" font-size="9" fill="#57534e" font-family="monospace">actor: employee</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 5 — LEARNER TRANSPARENCY
+  ══════════════════════════════════════════════════════ -->
+  <line x1="550" y1="634" x2="550" y2="652" stroke="#64748b" stroke-width="2" marker-end="url(#arrowW)"/>
+
+  <rect x="30" y="652" width="1040" height="118" rx="10" fill="#1e1b4b" fill-opacity="0.7" stroke="#6366f1" stroke-width="1.5"/>
+  <rect x="30" y="652" width="6" height="118" rx="3" fill="#6366f1"/>
+
+  <text x="58" y="676" font-size="11" font-weight="700" fill="#a5b4fc" letter-spacing="2">LAYER 5 — LEARNER TRANSPARENCY (Scenario Simulation)</text>
+  <text x="58" y="696" font-size="13" font-weight="600" fill="white">The employee sees governed scenarios — every decision recorded with justification</text>
+
+  <rect x="58" y="706" width="300" height="52" rx="7" fill="#312e81" stroke="#6366f1" stroke-width="1"/>
+  <text x="208" y="726" text-anchor="middle" font-size="11" font-weight="600" fill="#c7d2fe">MLRO Scenario Simulation</text>
+  <text x="208" y="741" text-anchor="middle" font-size="10" fill="#a5b4fc">Governed decision-making exercise</text>
+  <text x="208" y="755" text-anchor="middle" font-size="10" fill="#a5b4fc">linked to assigned role + modules</text>
+
+  <rect x="378" y="706" width="300" height="52" rx="7" fill="#312e81" stroke="#6366f1" stroke-width="1"/>
+  <text x="528" y="726" text-anchor="middle" font-size="11" font-weight="600" fill="#c7d2fe">Decision + Justification Captured</text>
+  <text x="528" y="741" text-anchor="middle" font-size="10" fill="#a5b4fc">decisionLabel · justification text</text>
+  <text x="528" y="755" text-anchor="middle" font-size="10" fill="#a5b4fc">ISO timestamp written to auditLog</text>
+
+  <rect x="698" y="706" width="362" height="52" rx="7" fill="#312e81" stroke="#6366f1" stroke-width="1"/>
+  <text x="879" y="726" text-anchor="middle" font-size="11" font-weight="600" fill="#c7d2fe">Manager Dashboard Updates Live</text>
+  <text x="879" y="741" text-anchor="middle" font-size="10" fill="#a5b4fc">modulesCompleted · progress % · last decision</text>
+  <text x="879" y="755" text-anchor="middle" font-size="10" fill="#a5b4fc">last justification — visible to manager in real time</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       BOTTOM — KEY PRINCIPLES
+  ══════════════════════════════════════════════════════ -->
+  <rect x="30" y="786" width="1040" height="54" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+
+  <rect x="58" y="800" width="220" height="28" rx="6" fill="#7c3aed"/>
+  <text x="168" y="818" text-anchor="middle" font-size="11" font-weight="600" fill="white">No hidden AI decision</text>
+
+  <rect x="310" y="800" width="220" height="28" rx="6" fill="#2563eb"/>
+  <text x="420" y="818" text-anchor="middle" font-size="11" font-weight="600" fill="white">Every output cites its source</text>
+
+  <rect x="562" y="800" width="220" height="28" rx="6" fill="#16a34a"/>
+  <text x="672" y="818" text-anchor="middle" font-size="11" font-weight="600" fill="white">Human gate before it matters</text>
+
+  <rect x="814" y="800" width="236" height="28" rx="6" fill="#d97706"/>
+  <text x="932" y="818" text-anchor="middle" font-size="11" font-weight="600" fill="white">Full chain: Regulation to Audit</text>
+
+</svg>

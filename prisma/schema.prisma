@@ -1,0 +1,133 @@
+// Prisma schema for Vidda Solutions
+// Database: PostgreSQL
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ============================================================================
+// AUDIT LOG - Every action logged
+// ============================================================================
+model AuditLog {
+  id          String   @id @default(cuid())
+  eventType   String   // "role_imported", "analysis_started", "checkpoint_approved"
+  actor       String   // "system", "user@bank.com"
+  details     Json     // Full context as JSON
+  timestamp   DateTime @default(now())
+  
+  @@index([eventType])
+  @@index([timestamp])
+  @@index([actor])
+}
+
+// ============================================================================
+// ROLES - Compliance roles (KYC Manager, MLRO, etc.)
+// ============================================================================
+model Role {
+  id               String   @id @default(cuid())
+  title            String
+  exposures        String[] // Array of risk exposures
+  responsibilities String[] // Array of responsibilities
+  importedAt       DateTime @default(now())
+  
+  // Relations
+  analysisRuns     AnalysisRun[]
+}
+
+// ============================================================================
+// ANALYSIS RUNS - ViddaGPT pipeline execution
+// ============================================================================
+model AnalysisRun {
+  id               String   @id @default(cuid())
+  roleId           String
+  role             Role     @relation(fields: [roleId], references: [id])
+  
+  // Status tracking
+  status           String   @default("pending") // pending, processing, completed, failed
+  
+  // ViddaGPT output
+  viddagptOutput   Json?    // Complete curriculum JSON from Claude
+  
+  // Timing
+  startedAt        DateTime?
+  completedAt      DateTime?
+  durationSeconds  Int?
+  
+  // Checkpoints (simplified - just boolean flags)
+  checkpointA      Boolean  @default(false)
+  checkpointB      Boolean  @default(false)
+  checkpointC      Boolean  @default(false)
+  
+  // Relations
+  modules          Module[]
+  enrollments      Enrollment[]
+  
+  createdAt        DateTime @default(now())
+  
+  @@index([roleId])
+  @@index([status])
+}
+
+// ============================================================================
+// MODULES - Training curriculum items
+// ============================================================================
+model Module {
+  id             String      @id @default(cuid())
+  analysisId     String
+  analysis       AnalysisRun @relation(fields: [analysisId], references: [id])
+  
+  // Module identity
+  name           String
+  quarter        String      // "Q1", "Q2", "Q3", "Q4"
+  moduleCode     String?     // "q1-001", "q2-005"
+  
+  // Content
+  objective      String
+  duration       Decimal     // Hours (3.5, 4.0)
+  difficulty     String?     // "Beginner", "Intermediate", "Advanced"
+  isMandatory    Boolean     @default(true)
+  contentType    String?     // "E-learning", "Workshop", "Case Study"
+  
+  // Explainability - WHY this module
+  reasonAssigned String      // Plain English explanation
+  riskAlignment  String[]    // Risk dimensions addressed
+  amlrArticles   Int[]       // AMLR article numbers (9-15)
+  
+  // Competencies (K/S/J model)
+  knowledge      String[]    // Knowledge items
+  skills         String[]    // Skills items
+  judgment       String[]    // Judgment items
+  
+  createdAt      DateTime    @default(now())
+  
+  @@index([analysisId])
+  @@index([quarter])
+}
+
+// ============================================================================
+// ENROLLMENTS - LMS assignments to employees
+// ============================================================================
+model Enrollment {
+  id                String      @id @default(cuid())
+  analysisId        String
+  analysis          AnalysisRun @relation(fields: [analysisId], references: [id])
+  
+  // Employee info
+  employeeName      String
+  employeeEmail     String
+  
+  // Progress tracking
+  modulesAssigned   Int         @default(0)
+  modulesCompleted  Int         @default(0)
+  progressPercent   Int         @default(0) // 0-100
+  
+  enrolledAt        DateTime    @default(now())
+  
+  @@index([analysisId])
+  @@index([employeeEmail])
+}

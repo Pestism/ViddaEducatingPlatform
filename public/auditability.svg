@@ -1,0 +1,354 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 920" font-family="Inter, Segoe UI, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0f1e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="cardGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#052e16"/>
+      <stop offset="100%" stop-color="#064e3b"/>
+    </linearGradient>
+    <linearGradient id="cardAmber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1c1400"/>
+      <stop offset="100%" stop-color="#2d1f00"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="arr" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#475569"/>
+    </marker>
+    <marker id="arrG" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#22c55e"/>
+    </marker>
+    <marker id="arrA" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <!-- BG -->
+  <rect width="1200" height="920" fill="url(#bg)" rx="16"/>
+
+  <!-- Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.025" stroke-width="1">
+    <line x1="0" y1="120" x2="1200" y2="120"/>
+    <line x1="0" y1="240" x2="1200" y2="240"/>
+    <line x1="0" y1="360" x2="1200" y2="360"/>
+    <line x1="0" y1="480" x2="1200" y2="480"/>
+    <line x1="0" y1="600" x2="1200" y2="600"/>
+    <line x1="0" y1="720" x2="1200" y2="720"/>
+    <line x1="0" y1="840" x2="1200" y2="840"/>
+    <line x1="300" y1="0" x2="300" y2="920"/>
+    <line x1="600" y1="0" x2="600" y2="920"/>
+    <line x1="900" y1="0" x2="900" y2="920"/>
+  </g>
+
+  <!-- ── HEADER ── -->
+  <rect x="0" y="0" width="1200" height="88" fill="#0a0f1e" rx="16"/>
+  <rect x="0" y="72" width="1200" height="16" fill="#0a0f1e"/>
+  <rect x="36" y="22" width="52" height="52" rx="10" fill="#16a34a" filter="url(#shadow)"/>
+  <text x="62" y="55" text-anchor="middle" font-size="26" fill="white">🔏</text>
+  <text x="110" y="42" font-size="24" font-weight="800" fill="white" filter="url(#glow)">Vidda Solutions</text>
+  <text x="110" y="65" font-size="13" fill="#64748b" letter-spacing="4">AUDITABILITY IMPLEMENTATION</text>
+  <rect x="820" y="28" width="340" height="36" rx="8" fill="#052e16" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="990" y="51" text-anchor="middle" font-size="12" fill="#4ade80" font-weight="600">Append-only · Actor-stamped · JSON-detailed · ID-chained</text>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION A — THE SCHEMA
+  ═══════════════════════════════════════════════════════════ -->
+  <text x="36" y="110" font-size="10" font-weight="700" fill="#64748b" letter-spacing="3">A — PRISMA SCHEMA</text>
+
+  <rect x="36" y="120" width="340" height="210" rx="10" fill="#0d1b2a" stroke="#1e40af" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="36" y="120" width="340" height="36" rx="10" fill="#1e3a5f"/>
+  <rect x="36" y="144" width="340" height="12" fill="#1e3a5f"/>
+  <text x="206" y="144" text-anchor="middle" font-size="13" font-weight="700" fill="#93c5fd">model AuditLog</text>
+
+  <text x="56" y="174" font-size="11" fill="#64748b" font-family="monospace">id</text>
+  <text x="160" y="174" font-size="11" fill="#7dd3fc" font-family="monospace">String   @id @default(cuid())</text>
+  <line x1="56" y1="182" x2="356" y2="182" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="56" y="200" font-size="11" fill="#64748b" font-family="monospace">eventType</text>
+  <text x="160" y="200" font-size="11" fill="#86efac" font-family="monospace">String   // event name</text>
+  <line x1="56" y1="208" x2="356" y2="208" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="56" y="226" font-size="11" fill="#64748b" font-family="monospace">actor</text>
+  <text x="160" y="226" font-size="11" fill="#fde68a" font-family="monospace">String   // system | user | …</text>
+  <line x1="56" y1="234" x2="356" y2="234" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="56" y="252" font-size="11" fill="#64748b" font-family="monospace">details</text>
+  <text x="160" y="252" font-size="11" fill="#f9a8d4" font-family="monospace">Json     // full context</text>
+  <line x1="56" y1="260" x2="356" y2="260" stroke="#1e293b" stroke-width="1"/>
+
+  <text x="56" y="278" font-size="11" fill="#64748b" font-family="monospace">createdAt</text>
+  <text x="160" y="278" font-size="11" fill="#7dd3fc" font-family="monospace">DateTime @default(now())</text>
+  <line x1="56" y1="286" x2="356" y2="286" stroke="#1e293b" stroke-width="1"/>
+
+  <rect x="56" y="296" width="300" height="24" rx="4" fill="#042f2e" stroke="#0d9488" stroke-width="1"/>
+  <text x="206" y="312" text-anchor="middle" font-size="10" fill="#5eead4" font-weight="600">No update. No delete. Append-only guarantee.</text>
+
+  <!-- ── SECTION A — ACTOR MAP ── -->
+  <rect x="396" y="120" width="250" height="210" rx="10" fill="#0d1b2a" stroke="#0284c7" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="396" y="120" width="250" height="36" rx="10" fill="#075985"/>
+  <rect x="396" y="144" width="250" height="12" fill="#075985"/>
+  <text x="521" y="144" text-anchor="middle" font-size="13" font-weight="700" fill="#bae6fd">Actors</text>
+
+  <rect x="416" y="166" width="210" height="24" rx="5" fill="#0c4a6e"/>
+  <text x="446" y="182" font-size="11" fill="#7dd3fc" font-weight="600">system</text>
+  <text x="560" y="182" text-anchor="end" font-size="10" fill="#38bdf8">automated pipeline steps</text>
+
+  <rect x="416" y="198" width="210" height="24" rx="5" fill="#0c4a6e"/>
+  <text x="446" y="214" font-size="11" fill="#7dd3fc" font-weight="600">user / manager</text>
+  <text x="560" y="214" text-anchor="end" font-size="10" fill="#38bdf8">approval decisions</text>
+
+  <rect x="416" y="230" width="210" height="24" rx="5" fill="#0c4a6e"/>
+  <text x="446" y="246" font-size="11" fill="#7dd3fc" font-weight="600">openrouter</text>
+  <text x="560" y="246" text-anchor="end" font-size="10" fill="#38bdf8">AI path generation</text>
+
+  <rect x="416" y="262" width="210" height="24" rx="5" fill="#0c4a6e"/>
+  <text x="446" y="278" font-size="11" fill="#7dd3fc" font-weight="600">employee</text>
+  <text x="560" y="278" text-anchor="end" font-size="10" fill="#38bdf8">scenario decisions</text>
+
+  <rect x="416" y="296" width="210" height="24" rx="5" fill="#042f2e" stroke="#0d9488" stroke-width="1"/>
+  <text x="521" y="312" text-anchor="middle" font-size="10" fill="#5eead4">Every row names who acted</text>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION B — EVENT CHAIN (timeline)
+  ═══════════════════════════════════════════════════════════ -->
+  <text x="36" y="356" font-size="10" font-weight="700" fill="#64748b" letter-spacing="3">B — FULL EVENT CHAIN (chronological)</text>
+
+  <!-- Timeline rail -->
+  <rect x="36" y="365" width="1128" height="6" rx="3" fill="#1e293b"/>
+
+  <!-- Events — 9 nodes evenly spaced -->
+  <!-- Node helper: cx = 36 + (n * 126) for n=0..8 -->
+
+  <!-- E0: role_imported -->
+  <circle cx="86" cy="368" r="14" fill="#16a34a" filter="url(#glow)"/>
+  <text x="86" y="373" text-anchor="middle" font-size="10" fill="white" font-weight="700">1</text>
+  <rect x="30" y="390" width="112" height="92" rx="8" fill="url(#cardGreen)" stroke="#16a34a" stroke-width="1.2"/>
+  <text x="86" y="410" text-anchor="middle" font-size="10" font-weight="700" fill="#4ade80">role_imported</text>
+  <line x1="30" y1="416" x2="142" y2="416" stroke="#14532d" stroke-width="1"/>
+  <text x="86" y="430" text-anchor="middle" font-size="9" fill="#86efac">actor: system</text>
+  <text x="86" y="444" text-anchor="middle" font-size="9" fill="#6ee7b7">role_id, role_key,</text>
+  <text x="86" y="458" text-anchor="middle" font-size="9" fill="#6ee7b7">band, risk_level</text>
+  <text x="86" y="472" text-anchor="middle" font-size="9" fill="#34d399">createdAt: ISO ts</text>
+
+  <!-- E1: analysis_started -->
+  <circle cx="212" cy="368" r="14" fill="#16a34a" filter="url(#glow)"/>
+  <text x="212" y="373" text-anchor="middle" font-size="10" fill="white" font-weight="700">2</text>
+  <rect x="156" y="390" width="112" height="92" rx="8" fill="url(#cardGreen)" stroke="#16a34a" stroke-width="1.2"/>
+  <text x="212" y="410" text-anchor="middle" font-size="10" font-weight="700" fill="#4ade80">analysis_started</text>
+  <line x1="156" y1="416" x2="268" y2="416" stroke="#14532d" stroke-width="1"/>
+  <text x="212" y="430" text-anchor="middle" font-size="9" fill="#86efac">actor: system</text>
+  <text x="212" y="444" text-anchor="middle" font-size="9" fill="#6ee7b7">analysis_id,</text>
+  <text x="212" y="458" text-anchor="middle" font-size="9" fill="#6ee7b7">role_id ref</text>
+  <text x="212" y="472" text-anchor="middle" font-size="9" fill="#34d399">createdAt: ISO ts</text>
+
+  <!-- E2: analysis_completed -->
+  <circle cx="338" cy="368" r="14" fill="#16a34a" filter="url(#glow)"/>
+  <text x="338" y="373" text-anchor="middle" font-size="10" fill="white" font-weight="700">3</text>
+  <rect x="282" y="390" width="112" height="92" rx="8" fill="url(#cardGreen)" stroke="#16a34a" stroke-width="1.2"/>
+  <text x="338" y="410" text-anchor="middle" font-size="10" font-weight="700" fill="#4ade80">analysis_completed</text>
+  <line x1="282" y1="416" x2="394" y2="416" stroke="#14532d" stroke-width="1"/>
+  <text x="338" y="430" text-anchor="middle" font-size="9" fill="#86efac">actor: system</text>
+  <text x="338" y="444" text-anchor="middle" font-size="9" fill="#6ee7b7">modules_count,</text>
+  <text x="338" y="458" text-anchor="middle" font-size="9" fill="#6ee7b7">framework_steps</text>
+  <text x="338" y="472" text-anchor="middle" font-size="9" fill="#34d399">createdAt: ISO ts</text>
+
+  <!-- E3: stepN_approved (×7) -->
+  <circle cx="464" cy="368" r="14" fill="#0284c7" filter="url(#glow)"/>
+  <text x="464" y="373" text-anchor="middle" font-size="10" fill="white" font-weight="700">4</text>
+  <rect x="408" y="390" width="112" height="92" rx="8" fill="#0c1a2e" stroke="#0284c7" stroke-width="1.2"/>
+  <text x="464" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#38bdf8">stepN_approved</text>
+  <text x="464" y="420" text-anchor="middle" font-size="9" fill="#7dd3fc">(or modified)</text>
+  <line x1="408" y1="426" x2="520" y2="426" stroke="#0c2a44" stroke-width="1"/>
+  <text x="464" y="440" text-anchor="middle" font-size="9" fill="#93c5fd">actor: user</text>
+  <text x="464" y="454" text-anchor="middle" font-size="9" fill="#bfdbfe">step_num, content,</text>
+  <text x="464" y="468" text-anchor="middle" font-size="9" fill="#bfdbfe">modified: bool</text>
+  <text x="464" y="482" text-anchor="middle" font-size="9" fill="#60a5fa">×7 steps logged</text>
+
+  <!-- E4: training_path_generated -->
+  <circle cx="590" cy="368" r="14" fill="#d97706" filter="url(#glow)"/>
+  <text x="590" y="373" text-anchor="middle" font-size="10" fill="white" font-weight="700">5</text>
+  <rect x="534" y="390" width="112" height="92" rx="8" fill="url(#cardAmber)" stroke="#d97706" stroke-width="1.2"/>
+  <text x="590" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#fbbf24">training_path</text>
+  <text x="590" y="420" text-anchor="middle" font-size="9" fill="#fde68a">_generated</text>
+  <line x1="534" y1="426" x2="646" y2="426" stroke="#2d1f00" stroke-width="1"/>
+  <text x="590" y="440" text-anchor="middle" font-size="9" fill="#fcd34d">actor: openrouter</text>
+  <text x="590" y="454" text-anchor="middle" font-size="9" fill="#fde68a">model, provider,</text>
+  <text x="590" y="468" text-anchor="middle" font-size="9" fill="#fde68a">module_count</text>
+  <text x="590" y="482" text-anchor="middle" font-size="9" fill="#f59e0b">createdAt: ISO ts</text>
+
+  <!-- E5: material_approved -->
+  <circle cx="716" cy="368" r="14" fill="#d97706" filter="url(#glow)"/>
+  <text x="716" y="373" text-anchor="middle" font-size="10" fill="white" font-weight="700">6</text>
+  <rect x="660" y="390" width="112" height="92" rx="8" fill="url(#cardAmber)" stroke="#d97706" stroke-width="1.2"/>
+  <text x="716" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#fbbf24">material_approved</text>
+  <line x1="660" y1="416" x2="772" y2="416" stroke="#2d1f00" stroke-width="1"/>
+  <text x="716" y="430" text-anchor="middle" font-size="9" fill="#fcd34d">actor: manager</text>
+  <text x="716" y="444" text-anchor="middle" font-size="9" fill="#fde68a">module_id,</text>
+  <text x="716" y="458" text-anchor="middle" font-size="9" fill="#fde68a">role_title</text>
+  <text x="716" y="472" text-anchor="middle" font-size="9" fill="#f59e0b">createdAt: ISO ts</text>
+
+  <!-- E6: training_assigned -->
+  <circle cx="842" cy="368" r="14" fill="#be185d" filter="url(#glow)"/>
+  <text x="842" y="373" text-anchor="middle" font-size="10" fill="white" font-weight="700">7</text>
+  <rect x="786" y="390" width="112" height="92" rx="8" fill="#1a0011" stroke="#be185d" stroke-width="1.2"/>
+  <text x="842" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#f472b6">training_assigned</text>
+  <line x1="786" y1="416" x2="898" y2="416" stroke="#2d0020" stroke-width="1"/>
+  <text x="842" y="430" text-anchor="middle" font-size="9" fill="#f9a8d4">actor: system</text>
+  <text x="842" y="444" text-anchor="middle" font-size="9" fill="#fbcfe8">employee_email,</text>
+  <text x="842" y="458" text-anchor="middle" font-size="9" fill="#fbcfe8">role_id, modules</text>
+  <text x="842" y="472" text-anchor="middle" font-size="9" fill="#f472b6">createdAt: ISO ts</text>
+
+  <!-- E7: scenario_decision -->
+  <circle cx="968" cy="368" r="14" fill="#be185d" filter="url(#glow)"/>
+  <text x="968" y="373" text-anchor="middle" font-size="10" fill="white" font-weight="700">8</text>
+  <rect x="912" y="390" width="112" height="92" rx="8" fill="#1a0011" stroke="#be185d" stroke-width="1.2"/>
+  <text x="968" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#f472b6">scenario_decision</text>
+  <line x1="912" y1="416" x2="1024" y2="416" stroke="#2d0020" stroke-width="1"/>
+  <text x="968" y="430" text-anchor="middle" font-size="9" fill="#f9a8d4">actor: employee</text>
+  <text x="968" y="444" text-anchor="middle" font-size="9" fill="#fbcfe8">decisionLabel,</text>
+  <text x="968" y="458" text-anchor="middle" font-size="9" fill="#fbcfe8">justification</text>
+  <text x="968" y="472" text-anchor="middle" font-size="9" fill="#f472b6">createdAt: ISO ts</text>
+
+  <!-- E8: audit_complete -->
+  <circle cx="1094" cy="368" r="16" fill="#16a34a" stroke="#4ade80" stroke-width="2" filter="url(#glow)"/>
+  <text x="1094" y="374" text-anchor="middle" font-size="13" fill="white">✓</text>
+  <rect x="1038" y="390" width="122" height="92" rx="8" fill="#042f2e" stroke="#4ade80" stroke-width="1.5"/>
+  <text x="1099" y="408" text-anchor="middle" font-size="10" font-weight="700" fill="#4ade80">Chain</text>
+  <text x="1099" y="420" text-anchor="middle" font-size="10" font-weight="700" fill="#4ade80">Complete</text>
+  <line x1="1038" y1="426" x2="1160" y2="426" stroke="#052e16" stroke-width="1"/>
+  <text x="1099" y="440" text-anchor="middle" font-size="9" fill="#86efac">role_id</text>
+  <text x="1099" y="454" text-anchor="middle" font-size="9" fill="#86efac">analysis_id</text>
+  <text x="1099" y="468" text-anchor="middle" font-size="9" fill="#86efac">module_id</text>
+  <text x="1099" y="482" text-anchor="middle" font-size="9" fill="#86efac">employee_email</text>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION C — SAMPLE LOG ENTRY
+  ═══════════════════════════════════════════════════════════ -->
+  <text x="36" y="514" font-size="10" font-weight="700" fill="#64748b" letter-spacing="3">C — SAMPLE LOG ENTRY (JSON details field)</text>
+
+  <rect x="36" y="524" width="510" height="188" rx="10" fill="#0a0e1a" stroke="#1e293b" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="36" y="524" width="510" height="32" rx="10" fill="#0f2744"/>
+  <rect x="36" y="544" width="510" height="12" fill="#0f2744"/>
+  <text x="56" y="546" font-size="11" font-weight="700" fill="#60a5fa">AuditLog row — stepN_modified event</text>
+
+  <text x="56" y="572" font-size="10" fill="#475569" font-family="monospace">{</text>
+  <text x="72" y="588" font-size="10" fill="#94a3b8" font-family="monospace">"id":</text>
+  <text x="130" y="588" font-size="10" fill="#86efac" font-family="monospace">"cm9k2x4p10000abc123"</text>
+  <text x="72" y="604" font-size="10" fill="#94a3b8" font-family="monospace">"eventType":</text>
+  <text x="160" y="604" font-size="10" fill="#60a5fa" font-family="monospace">"step3_modified"</text>
+  <text x="72" y="620" font-size="10" fill="#94a3b8" font-family="monospace">"actor":</text>
+  <text x="140" y="620" font-size="10" fill="#fde68a" font-family="monospace">"user"</text>
+  <text x="72" y="636" font-size="10" fill="#94a3b8" font-family="monospace">"details":</text>
+  <text x="145" y="636" font-size="10" fill="#f9a8d4" font-family="monospace">{ step_num: 3, original: {...},</text>
+  <text x="145" y="650" font-size="10" fill="#f9a8d4" font-family="monospace">  modified: {...}, analysis_id: "…" }</text>
+  <text x="72" y="666" font-size="10" fill="#94a3b8" font-family="monospace">"createdAt":</text>
+  <text x="162" y="666" font-size="10" fill="#7dd3fc" font-family="monospace">"2026-05-20T09:37:00.000Z"</text>
+  <text x="56" y="682" font-size="10" fill="#475569" font-family="monospace">}</text>
+  <rect x="56" y="692" width="470" height="12" rx="3" fill="#042f2e"/>
+  <text x="291" y="702" text-anchor="middle" font-size="9" fill="#4ade80">No id/createdAt ever changes — Prisma model has no update operations</text>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION C — UI DISPLAY
+  ═══════════════════════════════════════════════════════════ -->
+  <rect x="566" y="524" width="598" height="188" rx="10" fill="#0a0e1a" stroke="#1e293b" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="566" y="524" width="598" height="32" rx="10" fill="#0f2744"/>
+  <rect x="566" y="544" width="598" height="12" fill="#0f2744"/>
+  <text x="586" y="546" font-size="11" font-weight="700" fill="#60a5fa">Audit Trail — visible to manager in Step 6 LMS UI</text>
+
+  <!-- Simulated log lines -->
+  <rect x="586" y="562" width="558" height="18" rx="3" fill="#052e16"/>
+  <text x="600" y="575" font-size="10" fill="#4ade80" font-family="monospace">✓ role_imported      | system   | 2026-05-20T09:15:00.000Z</text>
+
+  <rect x="586" y="584" width="558" height="18" rx="3" fill="#052e16"/>
+  <text x="600" y="597" font-size="10" fill="#4ade80" font-family="monospace">✓ analysis_started   | system   | 2026-05-20T09:20:00.000Z</text>
+
+  <rect x="586" y="606" width="558" height="18" rx="3" fill="#052e16"/>
+  <text x="600" y="619" font-size="10" fill="#4ade80" font-family="monospace">✓ analysis_completed | system   | 2026-05-20T09:20:18.000Z</text>
+
+  <rect x="586" y="628" width="558" height="18" rx="3" fill="#052e16"/>
+  <text x="600" y="641" font-size="10" fill="#4ade80" font-family="monospace">✓ step1_approved     | user     | 2026-05-20T09:35:00.000Z</text>
+
+  <rect x="586" y="650" width="558" height="18" rx="3" fill="#0c2a44"/>
+  <text x="600" y="663" font-size="10" fill="#60a5fa" font-family="monospace">✎ step3_modified     | user     | 2026-05-20T09:37:00.000Z</text>
+
+  <rect x="586" y="672" width="558" height="18" rx="3" fill="#052e16"/>
+  <text x="600" y="685" font-size="10" fill="#4ade80" font-family="monospace">✓ step3_approved     | user     | 2026-05-20T09:37:30.000Z</text>
+
+  <rect x="586" y="694" width="558" height="12" rx="3" fill="#1a0011"/>
+  <text x="600" y="704" font-size="9" fill="#f472b6" font-family="monospace">✓ scenario_decision  | employee | 2026-05-20T10:12:44.000Z  → "File SAR" — "Clear indicators of structuring"</text>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION D — ID CHAIN
+  ═══════════════════════════════════════════════════════════ -->
+  <text x="36" y="738" font-size="10" font-weight="700" fill="#64748b" letter-spacing="3">D — TRACEABLE ID CHAIN (every log row joins back)</text>
+
+  <rect x="36" y="748" width="1128" height="68" rx="10" fill="#0a0e1a" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Chain nodes -->
+  <rect x="56" y="764" width="148" height="36" rx="7" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="130" y="780" text-anchor="middle" font-size="10" font-weight="700" fill="#93c5fd">role_id</text>
+  <text x="130" y="794" text-anchor="middle" font-size="9" fill="#60a5fa">aml-ddi-manager</text>
+
+  <line x1="204" y1="782" x2="240" y2="782" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="240" y="764" width="148" height="36" rx="7" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="314" y="780" text-anchor="middle" font-size="10" font-weight="700" fill="#93c5fd">analysis_id</text>
+  <text x="314" y="794" text-anchor="middle" font-size="9" fill="#60a5fa">cm9k… (cuid)</text>
+
+  <line x1="388" y1="782" x2="424" y2="782" stroke="#3b82f6" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="424" y="764" width="148" height="36" rx="7" fill="#0f2744" stroke="#0284c7" stroke-width="1.2"/>
+  <text x="498" y="780" text-anchor="middle" font-size="10" font-weight="700" fill="#7dd3fc">framework_steps[1..7]</text>
+  <text x="498" y="794" text-anchor="middle" font-size="9" fill="#38bdf8">approved content per step</text>
+
+  <line x1="572" y1="782" x2="608" y2="782" stroke="#0284c7" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="608" y="764" width="148" height="36" rx="7" fill="#2d1f00" stroke="#d97706" stroke-width="1.2"/>
+  <text x="682" y="780" text-anchor="middle" font-size="10" font-weight="700" fill="#fcd34d">module_id ×N</text>
+  <text x="682" y="794" text-anchor="middle" font-size="9" fill="#fbbf24">reason_assigned per row</text>
+
+  <line x1="756" y1="782" x2="792" y2="782" stroke="#d97706" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="792" y="764" width="148" height="36" rx="7" fill="#2d1f00" stroke="#d97706" stroke-width="1.2"/>
+  <text x="866" y="780" text-anchor="middle" font-size="10" font-weight="700" fill="#fcd34d">material_id</text>
+  <text x="866" y="794" text-anchor="middle" font-size="9" fill="#fbbf24">approved by manager</text>
+
+  <line x1="940" y1="782" x2="976" y2="782" stroke="#be185d" stroke-width="1.5" marker-end="url(#arr)"/>
+
+  <rect x="976" y="764" width="168" height="36" rx="7" fill="#1a0011" stroke="#be185d" stroke-width="1.2"/>
+  <text x="1060" y="780" text-anchor="middle" font-size="10" font-weight="700" fill="#f9a8d4">employee_email</text>
+  <text x="1060" y="794" text-anchor="middle" font-size="9" fill="#f472b6">→ scenario decisions</text>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       SECTION E — GUARANTEES FOOTER
+  ═══════════════════════════════════════════════════════════ -->
+  <rect x="36" y="832" width="1128" height="68" rx="10" fill="#050d0a" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="600" y="854" text-anchor="middle" font-size="11" font-weight="700" fill="#4ade80" letter-spacing="2">AUDITABILITY GUARANTEES</text>
+
+  <!-- 5 chips -->
+  <rect x="56" y="862" width="170" height="26" rx="6" fill="#052e16" stroke="#16a34a" stroke-width="1"/>
+  <text x="141" y="879" text-anchor="middle" font-size="10" fill="#4ade80" font-weight="600">Append-only (no DELETE)</text>
+
+  <rect x="242" y="862" width="170" height="26" rx="6" fill="#052e16" stroke="#16a34a" stroke-width="1"/>
+  <text x="327" y="879" text-anchor="middle" font-size="10" fill="#4ade80" font-weight="600">Actor on every row</text>
+
+  <rect x="428" y="862" width="170" height="26" rx="6" fill="#052e16" stroke="#16a34a" stroke-width="1"/>
+  <text x="513" y="879" text-anchor="middle" font-size="10" fill="#4ade80" font-weight="600">ISO timestamp (UTC)</text>
+
+  <rect x="614" y="862" width="190" height="26" rx="6" fill="#052e16" stroke="#16a34a" stroke-width="1"/>
+  <text x="709" y="879" text-anchor="middle" font-size="10" fill="#4ade80" font-weight="600">Full JSON context in details</text>
+
+  <rect x="820" y="862" width="196" height="26" rx="6" fill="#052e16" stroke="#16a34a" stroke-width="1"/>
+  <text x="918" y="879" text-anchor="middle" font-size="10" fill="#4ade80" font-weight="600">ID chain: role → scenario</text>
+
+  <rect x="1032" y="862" width="112" height="26" rx="6" fill="#14532d" stroke="#22c55e" stroke-width="1.5"/>
+  <text x="1088" y="879" text-anchor="middle" font-size="10" fill="white" font-weight="700">PostgreSQL</text>
+
+</svg>

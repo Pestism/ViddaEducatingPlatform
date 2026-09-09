@@ -1,0 +1,253 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" font-family="Inter, Segoe UI, sans-serif">
+  <!-- Background -->
+  <rect width="1100" height="820" fill="#f8fafc" rx="12"/>
+
+  <!-- Title -->
+  <rect x="0" y="0" width="1100" height="64" fill="#1e3a5f" rx="12"/>
+  <rect x="0" y="52" width="1100" height="12" fill="#1e3a5f"/>
+  <text x="550" y="38" text-anchor="middle" font-size="22" font-weight="700" fill="white">Vidda Solutions — End-to-End Traceability Architecture</text>
+
+  <!-- ── COLUMN HEADERS ── -->
+  <!-- Left: AMLR Regulation -->
+  <rect x="20" y="80" width="160" height="36" rx="6" fill="#7c3aed"/>
+  <text x="100" y="103" text-anchor="middle" font-size="13" font-weight="600" fill="white">AMLR Regulation</text>
+
+  <!-- Centre: Pipeline Steps -->
+  <rect x="380" y="80" width="340" height="36" rx="6" fill="#1d4ed8"/>
+  <text x="550" y="103" text-anchor="middle" font-size="13" font-weight="600" fill="white">7-Step Governance Pipeline</text>
+
+  <!-- Right: Audit Trail -->
+  <rect x="900" y="80" width="180" height="36" rx="6" fill="#065f46"/>
+  <text x="990" y="103" text-anchor="middle" font-size="13" font-weight="600" fill="white">Immutable Audit Trail</text>
+
+  <!-- ═══════════════════════════════════════════
+       LEFT COLUMN — AMLR Articles
+  ═══════════════════════════════════════════ -->
+  <rect x="20" y="132" width="160" height="560" rx="8" fill="#ede9fe" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="100" y="158" text-anchor="middle" font-size="11" font-weight="700" fill="#5b21b6">AMLR 2024/1624</text>
+
+  <!-- Article pills -->
+  <rect x="34" y="168" width="132" height="28" rx="5" fill="#7c3aed"/>
+  <text x="100" y="187" text-anchor="middle" font-size="11" fill="white" font-weight="600">Article 9 — Controls</text>
+
+  <rect x="34" y="204" width="132" height="28" rx="5" fill="#7c3aed"/>
+  <text x="100" y="223" text-anchor="middle" font-size="11" fill="white" font-weight="600">Article 10 — Risk</text>
+
+  <rect x="34" y="240" width="132" height="28" rx="5" fill="#7c3aed"/>
+  <text x="100" y="259" text-anchor="middle" font-size="11" fill="white" font-weight="600">Article 11 — Functions</text>
+
+  <rect x="34" y="276" width="132" height="28" rx="5" fill="#7c3aed"/>
+  <text x="100" y="295" text-anchor="middle" font-size="11" fill="white" font-weight="600">Article 12 — Training</text>
+
+  <rect x="34" y="312" width="132" height="28" rx="5" fill="#7c3aed"/>
+  <text x="100" y="331" text-anchor="middle" font-size="11" fill="white" font-weight="600">Article 13 — Integrity</text>
+
+  <rect x="34" y="348" width="132" height="28" rx="5" fill="#9333ea"/>
+  <text x="100" y="367" text-anchor="middle" font-size="11" fill="white" font-weight="600">Article 14</text>
+
+  <rect x="34" y="384" width="132" height="28" rx="5" fill="#9333ea"/>
+  <text x="100" y="403" text-anchor="middle" font-size="11" fill="white" font-weight="600">Article 15</text>
+
+  <!-- RAG Engine box -->
+  <rect x="26" y="430" width="148" height="64" rx="6" fill="#4c1d95" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="100" y="453" text-anchor="middle" font-size="11" font-weight="700" fill="#e9d5ff">RAG Engine</text>
+  <text x="100" y="468" text-anchor="middle" font-size="10" fill="#c4b5fd">Vector similarity</text>
+  <text x="100" y="481" text-anchor="middle" font-size="10" fill="#c4b5fd">search + highlights</text>
+
+  <!-- Evidence label -->
+  <rect x="26" y="506" width="148" height="40" rx="5" fill="#f3e8ff" stroke="#a78bfa" stroke-width="1"/>
+  <text x="100" y="521" text-anchor="middle" font-size="10" fill="#5b21b6" font-weight="600">Per-step evidence</text>
+  <text x="100" y="535" text-anchor="middle" font-size="10" fill="#7c3aed">linked to training decisions</text>
+
+  <!-- ═══════════════════════════════════════════
+       CENTRE COLUMN — 7 Pipeline Steps
+  ═══════════════════════════════════════════ -->
+
+  <!-- Step 1 -->
+  <rect x="210" y="132" width="560" height="56" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="210" y="132" width="6" height="56" rx="3" fill="#2563eb"/>
+  <text x="228" y="155" font-size="12" font-weight="700" fill="#1e40af">Step 1: Role Import</text>
+  <text x="228" y="172" font-size="11" fill="#1e3a8a">role_id generated · role_key + band + risk level recorded</text>
+  <rect x="630" y="142" width="130" height="22" rx="4" fill="#2563eb"/>
+  <text x="695" y="157" text-anchor="middle" font-size="10" fill="white" font-weight="600">Checkpoint — role_imported</text>
+
+  <!-- Arrow 1→2 -->
+  <line x1="550" y1="188" x2="550" y2="204" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 2 -->
+  <rect x="210" y="204" width="560" height="56" rx="8" fill="#dbeafe" stroke="#3b82f6" stroke-width="1.5"/>
+  <rect x="210" y="204" width="6" height="56" rx="3" fill="#2563eb"/>
+  <text x="228" y="227" font-size="12" font-weight="700" fill="#1e40af">Step 2: ViddaGPT Analysis</text>
+  <text x="228" y="244" font-size="11" fill="#1e3a8a">analysis_id created · RAG retrieves AMLR evidence · framework_steps populated</text>
+  <rect x="630" y="214" width="130" height="22" rx="4" fill="#2563eb"/>
+  <text x="695" y="229" text-anchor="middle" font-size="10" fill="white" font-weight="600">analysis_started / completed</text>
+
+  <!-- Arrow 2→3 -->
+  <line x1="550" y1="260" x2="550" y2="276" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- CHECKPOINT A band -->
+  <rect x="210" y="274" width="560" height="18" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="550" y="287" text-anchor="middle" font-size="10" font-weight="700" fill="#92400e">▶ CHECKPOINT A — Manager reviews Steps 3 · 4 · 5</text>
+
+  <!-- Step 3 -->
+  <rect x="210" y="294" width="560" height="56" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="210" y="294" width="6" height="56" rx="3" fill="#059669"/>
+  <text x="228" y="317" font-size="12" font-weight="700" fill="#065f46">Step 3: Role Function  ✓ Approve / ✎ Modify / ✗ Reject</text>
+  <text x="228" y="334" font-size="11" fill="#064e3b">RAG article buttons inline · editable fields · badge overrides saved</text>
+  <rect x="630" y="304" width="130" height="22" rx="4" fill="#059669"/>
+  <text x="695" y="319" text-anchor="middle" font-size="10" fill="white" font-weight="600">step1_approved/modified</text>
+
+  <!-- Arrow 3→4 -->
+  <line x1="550" y1="350" x2="550" y2="362" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 4 -->
+  <rect x="210" y="362" width="560" height="56" rx="8" fill="#d1fae5" stroke="#10b981" stroke-width="1.5"/>
+  <rect x="210" y="362" width="6" height="56" rx="3" fill="#059669"/>
+  <text x="228" y="385" font-size="12" font-weight="700" fill="#065f46">Steps 4–7: Risk · Themes · Obligations · KSJ · Focus</text>
+  <text x="228" y="402" font-size="11" fill="#064e3b">Every approve/modify/reject timestamped · all 7 steps must resolve</text>
+  <rect x="630" y="372" width="130" height="22" rx="4" fill="#059669"/>
+  <text x="695" y="387" text-anchor="middle" font-size="10" fill="white" font-weight="600">stepN_approved/modified</text>
+
+  <!-- CHECKPOINT B band -->
+  <rect x="210" y="420" width="560" height="18" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="550" y="433" text-anchor="middle" font-size="10" font-weight="700" fill="#92400e">▶ CHECKPOINT B — Generate Training Path via OpenRouter</text>
+
+  <!-- Step 5 -->
+  <rect x="210" y="440" width="560" height="56" rx="8" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <rect x="210" y="440" width="6" height="56" rx="3" fill="#ca8a04"/>
+  <text x="228" y="463" font-size="12" font-weight="700" fill="#713f12">Step 4 UI: Training Modules  (Quarter filter · KSJ detail)</text>
+  <text x="228" y="480" font-size="11" fill="#78350f">modules linked to AMLR articles · reason_assigned · mandatory flag</text>
+  <rect x="630" y="450" width="130" height="22" rx="4" fill="#ca8a04"/>
+  <text x="695" y="465" text-anchor="middle" font-size="10" fill="white" font-weight="600">training_path_generated</text>
+
+  <!-- Arrow 5→6 -->
+  <line x1="550" y1="496" x2="550" y2="508" stroke="#94a3b8" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Step 6 - Material -->
+  <rect x="210" y="508" width="560" height="50" rx="8" fill="#fef9c3" stroke="#eab308" stroke-width="1.5"/>
+  <rect x="210" y="508" width="6" height="50" rx="3" fill="#ca8a04"/>
+  <text x="228" y="529" font-size="12" font-weight="700" fill="#713f12">Step 5: Training Material  (TrainingMaterialGenerator)</text>
+  <text x="228" y="546" font-size="11" fill="#78350f">module_id approved · material_approved logged per module</text>
+  <rect x="630" y="516" width="130" height="22" rx="4" fill="#ca8a04"/>
+  <text x="695" y="531" text-anchor="middle" font-size="10" fill="white" font-weight="600">material_approved</text>
+
+  <!-- CHECKPOINT C band -->
+  <rect x="210" y="560" width="560" height="18" rx="4" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="550" y="573" text-anchor="middle" font-size="10" font-weight="700" fill="#92400e">▶ CHECKPOINT C — Assign to LMS &amp; Monitor</text>
+
+  <!-- Step 7 - LMS -->
+  <rect x="210" y="580" width="560" height="50" rx="8" fill="#ffe4e6" stroke="#f43f5e" stroke-width="1.5"/>
+  <rect x="210" y="580" width="6" height="50" rx="3" fill="#e11d48"/>
+  <text x="228" y="601" font-size="12" font-weight="700" fill="#881337">Step 6: LMS Assignment</text>
+  <text x="228" y="618" font-size="11" fill="#9f1239">employee_email bound · training_assigned logged · step 7 unlocked</text>
+  <rect x="630" y="588" width="130" height="22" rx="4" fill="#e11d48"/>
+  <text x="695" y="603" text-anchor="middle" font-size="10" fill="white" font-weight="600">training_assigned</text>
+
+  <!-- Step 8 - Monitor -->
+  <rect x="210" y="640" width="560" height="50" rx="8" fill="#ffe4e6" stroke="#f43f5e" stroke-width="1.5"/>
+  <rect x="210" y="640" width="6" height="50" rx="3" fill="#e11d48"/>
+  <text x="228" y="661" font-size="12" font-weight="700" fill="#881337">Step 7: Monitor — MLRO Scenario Simulation</text>
+  <text x="228" y="678" font-size="11" fill="#9f1239">decision + justification + timestamp recorded per simulation round</text>
+  <rect x="630" y="648" width="130" height="22" rx="4" fill="#e11d48"/>
+  <text x="695" y="663" text-anchor="middle" font-size="10" fill="white" font-weight="600">scenario_decision</text>
+
+  <!-- ═══════════════════════════════════════════
+       RIGHT COLUMN — Audit Trail
+  ═══════════════════════════════════════════ -->
+  <rect x="790" y="132" width="295" height="560" rx="8" fill="#d1fae5" stroke="#059669" stroke-width="1.5"/>
+  <text x="937" y="158" text-anchor="middle" font-size="11" font-weight="700" fill="#064e3b">AuditLog (Prisma)</text>
+
+  <!-- Audit entries -->
+  <rect x="800" y="166" width="275" height="22" rx="4" fill="#059669"/>
+  <text x="937" y="181" text-anchor="middle" font-size="10" fill="white">✓ role_imported  |  actor  |  timestamp</text>
+
+  <rect x="800" y="196" width="275" height="22" rx="4" fill="#059669"/>
+  <text x="937" y="211" text-anchor="middle" font-size="10" fill="white">✓ analysis_started  |  actor  |  timestamp</text>
+
+  <rect x="800" y="226" width="275" height="22" rx="4" fill="#059669"/>
+  <text x="937" y="241" text-anchor="middle" font-size="10" fill="white">✓ analysis_completed  |  actor  |  timestamp</text>
+
+  <rect x="800" y="256" width="275" height="22" rx="4" fill="#047857"/>
+  <text x="937" y="271" text-anchor="middle" font-size="10" fill="white">✓ step1_approved  |  user  |  timestamp</text>
+
+  <rect x="800" y="286" width="275" height="22" rx="4" fill="#0284c7"/>
+  <text x="937" y="301" text-anchor="middle" font-size="10" fill="white">✎ step3_modified  |  user  |  timestamp</text>
+
+  <rect x="800" y="316" width="275" height="22" rx="4" fill="#047857"/>
+  <text x="937" y="331" text-anchor="middle" font-size="10" fill="white">✓ step3_approved  |  user  |  timestamp</text>
+
+  <rect x="800" y="346" width="275" height="22" rx="4" fill="#047857"/>
+  <text x="937" y="361" text-anchor="middle" font-size="10" fill="white">✓ stepN_approved  ×7  |  user</text>
+
+  <rect x="800" y="376" width="275" height="22" rx="4" fill="#b45309"/>
+  <text x="937" y="391" text-anchor="middle" font-size="10" fill="white">✓ training_path_generated  |  system</text>
+
+  <rect x="800" y="406" width="275" height="22" rx="4" fill="#b45309"/>
+  <text x="937" y="421" text-anchor="middle" font-size="10" fill="white">✓ material_approved  |  manager</text>
+
+  <rect x="800" y="436" width="275" height="22" rx="4" fill="#be185d"/>
+  <text x="937" y="451" text-anchor="middle" font-size="10" fill="white">✓ training_assigned  |  system</text>
+
+  <rect x="800" y="466" width="275" height="22" rx="4" fill="#be185d"/>
+  <text x="937" y="481" text-anchor="middle" font-size="10" fill="white">✓ scenario_decision  |  employee</text>
+
+  <!-- Immutability note -->
+  <rect x="800" y="498" width="275" height="60" rx="6" fill="#022c22" stroke="#059669" stroke-width="1"/>
+  <text x="937" y="518" text-anchor="middle" font-size="11" font-weight="700" fill="#6ee7b7">Every row is append-only</text>
+  <text x="937" y="534" text-anchor="middle" font-size="10" fill="#a7f3d0">eventType · actor · details (JSON)</text>
+  <text x="937" y="549" text-anchor="middle" font-size="10" fill="#a7f3d0">No update · No delete · Full chain</text>
+
+  <!-- ID chain -->
+  <rect x="800" y="568" width="275" height="52" rx="6" fill="#1e3a5f" stroke="#3b82f6" stroke-width="1"/>
+  <text x="937" y="588" text-anchor="middle" font-size="10" font-weight="700" fill="#93c5fd">Traceable IDs</text>
+  <text x="937" y="603" text-anchor="middle" font-size="10" fill="#bfdbfe">role_id → analysis_id → module_id</text>
+  <text x="937" y="616" text-anchor="middle" font-size="10" fill="#bfdbfe">→ employee_email → scenario_id</text>
+
+  <!-- ═══════════════════════════════════════════
+       RAG ARROWS (left col → step 3 area)
+  ═══════════════════════════════════════════ -->
+  <!-- Article arrows to Step 3 block -->
+  <path d="M 180 182 C 200 182 200 322 210 322" stroke="#a78bfa" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+  <path d="M 180 218 C 200 218 200 338 210 338" stroke="#a78bfa" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+  <path d="M 180 254 C 202 254 202 346 210 346" stroke="#a78bfa" stroke-width="1.5" fill="none" stroke-dasharray="5,3"/>
+  <text x="192" y="295" font-size="9" fill="#7c3aed" transform="rotate(-90,192,295)">RAG evidence</text>
+
+  <!-- ═══════════════════════════════════════════
+       BOTTOM LEGEND
+  ═══════════════════════════════════════════ -->
+  <rect x="20" y="710" width="1060" height="90" rx="8" fill="white" stroke="#e2e8f0" stroke-width="1.5"/>
+  <text x="40" y="730" font-size="11" font-weight="700" fill="#1e293b">Legend</text>
+
+  <!-- Legend items -->
+  <rect x="40" y="740" width="16" height="16" rx="3" fill="#2563eb"/>
+  <text x="62" y="753" font-size="10" fill="#334155">Import &amp; Analysis steps</text>
+
+  <rect x="180" y="740" width="16" height="16" rx="3" fill="#059669"/>
+  <text x="202" y="753" font-size="10" fill="#334155">Governance validation (approve/modify/reject)</text>
+
+  <rect x="420" y="740" width="16" height="16" rx="3" fill="#ca8a04"/>
+  <text x="442" y="753" font-size="10" fill="#334155">Training path &amp; material generation</text>
+
+  <rect x="640" y="740" width="16" height="16" rx="3" fill="#e11d48"/>
+  <text x="662" y="753" font-size="10" fill="#334155">LMS assignment &amp; monitoring</text>
+
+  <rect x="840" y="740" width="16" height="16" rx="3" fill="#7c3aed"/>
+  <text x="862" y="753" font-size="10" fill="#334155">RAG / AMLR article evidence</text>
+
+  <!-- Line 2 legend -->
+  <line x1="40" y1="778" x2="70" y2="778" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5,3"/>
+  <text x="78" y="782" font-size="10" fill="#334155">RAG evidence link (vector search → highlighted doc viewer)</text>
+
+  <rect x="380" y="770" width="16" height="16" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1"/>
+  <text x="402" y="782" font-size="10" fill="#334155">Governance checkpoint gate (all steps must pass to advance)</text>
+
+  <rect x="750" y="770" width="16" height="16" rx="3" fill="#022c22"/>
+  <text x="772" y="782" font-size="10" fill="#334155">Immutable append-only audit log (Prisma / PostgreSQL)</text>
+
+  <!-- Arrow marker def -->
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+</svg>

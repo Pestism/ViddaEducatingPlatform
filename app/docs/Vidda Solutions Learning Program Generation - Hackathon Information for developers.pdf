@@ -1,0 +1,345 @@
+Build the Automation
+Engine for
+Compliance Training
+The Challenge: Build an AI-powered human-in-the-loop pipeline for
+generating high-quality customized training programs for regulatory
+requirements.
+
+Your task
+Create a tailored compliance training program that proves:
+✓ It is compliant to regulatory requirements (AMLR)
+✓ The right training is mapped to the right role, based on their actual risk exposure
+Your solution must auto-generate a training plan per role, based on:
+Role description
+Tasks &
+responsibilities
+Risk exposure
+Who is the person and what
+is their function?
+What do they actually do
+day-to-day?
+What AML, sanctions, fraud
+or documentation risks do
+they face?
+Regulatory
+requirements
+Which AMLR articles and
+obligations apply to this
+role?
+Competency needs
+What knowledge and skills
+are required to manage their
+risk?
+The solution should provide an effective mechanism for AI and humans to collaborate in the generation process.
+
+Resources 
+Material 
+
+The material you’ll receive
+You won't start from zero. Teams receive structured inputs across these areas:
+Role Descriptions
+Risk Exposure
+KYC Analyst · AML Investigator · Compliance Officer · Front
+Office Advisor
+Each with typical tasks: onboarding, screening, transaction
+monitoring, escalation
+AML risk · Sanctions risk · Fraud risk · Documentation risk ·
++1 more
+Pre-mapped risk levels per role to guide training depth
+Regulatory Material
+Selected AMLR articles · Risk-based methodology guidance ·
+Competency & training obligations
+Key extracts from AMLR 2024/1624 relevant to each role
+
+How we will evaluate your work
+Evaluation Criteria Example Scenario
+25%
+20% 15% 15%
+10% 10% 5% Risk-Role-Competency Link & Explainability
+Does risk exposure drive the right training, and can the
+user see WHY the training was assigned?
+Regulatory Relevance
+Does the solution reflect AMLR requirements?
+Automation Degree
+How much of the process is automated?
+How to make the solution proprietary
+Does the solution have unique elements that competitors
+cannot easily copy?
+Ease of Use
+Is the solution intuitive in practice?
+LMS Functionality
+Can training be assigned and tracked?
+Business Relevance
+Would an organisation actually use this?
+KYC Analyst
+Front Office Advisor
+Compliance Officer
+Using different roles to demonstrate:
+1 Role mapping & import existing roles into the system
+2 Validate roles against AMLR obligations and compliance functions
+3 Risk assessment per role across AMLR, sanctions and fraud dimensions
+4 Auto-generated structured training path specific for each role
+5 Explain why each module was included and show the earning being
+6 Assignment in a simple LMS view
+
+The following slides demonstrate:
+A Risk-Based Approach to
+Role-Based Training
+Risk-Based Approach to Role-Based Training for
+KYC Analyst (Enhanced Due Diligence / EDD)
+Role Description
+1 Why is role-based training needed?
+2 What are the main areas of responsibility?
+3 What is the inherent AML exposure?
+4 What are the key risk themes?
+5 How to ensure regulatory accountability?
+6 How to ensure role-specific competence?
+7 Role-based training focus
+
+Risk-Based Approach to Role-Based Training for
+KYC Analyst (Enhanced Due Diligence / EDD)
+For illustrative purpose
+This role does not own the customer relationship and does not make commercial decisions. The responsibility is risk understan ding and escalation.
+1
+Role Function / The why?
+The KYC Analyst (EDD) conducts enhanced due diligence on high-risk
+customers to ensure that the bank has a complete and sound
+understanding of the customer's identity, business, source of funds, and
+the actual risk associated with the customer.
+The role is a critical control function that shall prevent the bank from
+establishing or maintaining customer relationships linked to money
+laundering, terrorist financing, or other financial crime.
+
+2 Main Areas of Responsibility
+• Conduct enhanced due diligence (EDD) for higher-risk customers
+• Review and validate customer ownership, control, and corporate/organisational
+structure
+• Assess source of funds and source of wealth where required
+• Perform periodic KYC reviews based on risk level
+• Identify discrepancies between customer information and observed behaviour
+• Document risk assessments and conclusions in a manner that is auditable and
+regulator-ready
+• Escalate suspicious indicators to AML investigations as needed
+3 Inherent AML Exposure
+• Handles the bank's highest-risk customers
+• Relies on professional judgement, not just checklists
+• Weak or flawed analysis can allow illegitimate customers to go
+undetected
+• Failure to escalate can directly lead to regulatory breaches
+4 Key Risk Themes
+• Risk related to beneficial ownership and control
+• Risk in high-risk customer onboarding
+• Risk related to ongoing customer due diligence and periodic reviews
+• Jurisdictional and geographic risk
+• Risk related to documentation and audit trail
+• Risk related to escalation and reporting
+
+5. Regulatory Accountability — Key Obligations
+• Apply a risk-based approach to customer due diligence
+• Perform due diligence on high-risk customers
+• Maintain accurate and up-to-date customer information
+• Identify and escalate suspicious activity
+• Maintain clear documentation and audit trail
+6. Role-Specific Competence
+Knowledge
+• Enhanced due diligence
+(EDD) requirements
+• Ownership and control
+structures
+• Concepts of source of
+funds and source of wealth
+• AML typologies relevant to
+the bank's customers
+Skills
+• Analyse complex customer
+structures
+• Assess the plausibility of
+financial
+explanations/narratives
+• Write clear, well-reasoned risk
+rationales
+• Identify red flags and
+inconsistencies/discrepancies
+Judgement
+• Knowing when explanations
+are insufficient
+• Escalating under
+uncertainty
+• Applying standards
+consistently, even under
+pressure
+
+The Result → Role-specific, Risk-based Compliance Training
+1.Training: guidelines, standards, risk-based approach, etc.
+2. Training is updated annually
+and when regulations,
+typologies, or internal
+findings change
+3. Enhanced due diligence
+(EDD) and case handling
+Source of wealth and
+source of funds
+4. Structures for beneficial
+owners (beneficial
+ownership)
+5. Red flags and escalation
+decisions
+6. Documentation and
+audit trail for
+review/supervision
+
+How to build a
+compliance training
+program:
+Example training plans tailored to roles
+
+Training plan: Transaction Monitoring Analyst
+This training plan is built around the specific risks, regulations, and behaviours required for the Transaction Monitoring
+Analyst role. It is designed not just to build knowledge, but to drive genuine behavioural change: ensuring regulatory
+obligations are understood, internalised, and consistently applied in day-to-day work.
+Q1 Q1
+Q1: Foundation Q2: Application Q3: Deepening Q4: Embedding
+Yearly Wheel
+Q1
+Q1
+Training Philosophy
+• Year 1 is intensive: building foundation, applying knowledge, and
+assessing competency
+• Years 2–4 maintain and deepen skills through annual refreshers, specialist
+development, and peer contribution
+• Behavioural change is evidenced through QA reviews, assessments, and
+reflective practice
+• Regulatory literacy is built progressively — not just ticked off once
+
+Training Path – Y1
+Building knowledge to embedded behaviour
+Q1: Foundation month 1-3
+• AML/CTF Fundamentals
+• TM Systems & Alert
+Workflows
+• GDPR in Investigations
+• Shadowing & Guided
+v
+Caseload
+• SAR Submission Process
+• Money Laundering
+Typologies
+Q2: Application Months 4-6
+• FCA Financial Crime Guide
+• Case Documentation
+Standards
+• Independent Caseload Begins
+• High-Risk Typologies
+Workshop
+• Peer Review Exercise
+• Sanctions Screening
+Fundamentals
+Q3: Deepening Months 7-9
+• ICA Certificate — Enrol
+• Fraud & AML Overlap
+Training
+• Risk-Based Thinking
+Workshop
+• AML Risk Committee
+Attendance
+• Consumer Duty Awareness
+• Reflective Case Review
+Q4: Embedding Months 10-12
+• Regulatory Update Briefing
+• Team QA Review Participation
+• Complex Typology Scenario
+Test
+• Annual AML Mandatory
+Refresher
+• Full Competency Assessment
+• Personal Development Plan
+(Y2)
+Months 1-3 Months 4-6 Months 7-9 Months 10-12
+
+Training plan: Customer Advisor
+This training plan is built around the specific risks, regulations, and behaviours required for the Customer
+Advisor role. It is designed not just to build knowledge, but to drive genuine behavioural change, ensuring
+regulatory obligations are understood, internalised, and consistently applied in day-to-day work.
+Q1 Q1
+Q1: Foundation Q2: Application Q3: Deepening Q4: Embedding
+Yearly Wheel
+Q1
+Q1
+Training Philosophy
+• Year 1 is intensive — building foundation, applying knowledge, and
+assessing competency
+• Years 2–4 maintain and deepen skills through annual refreshers, specialist
+development, and peer contribution
+• Behavioural change is evidenced through QA reviews, assessments, and
+reflective practice
+• Regulatory literacy is built progressively — not just ticked off once
+Training Path – Y1
+Building knowledge to embedded behaviour
+
+Q1: Foundation
+AML/KYC Awareness for
+Customer Staff
+• GDPR & Customer Data
+Handling
+• KYC Onboarding Process
+• Shadowing Experienced
+Advisors
+v
+• Consumer Duty Introduction
+• Complaint Handling (FCA
+DISP Rules)
+
+Q2: Application  Months 4-6
+Financial Crime Red Flags in
+Customer Contact
+• Tipping Off — Awareness &
+Avoidance
+• Independent Caseload with
+Call Monitoring
+• Difficult Conversations
+Workshop
+• Quality Review with Manager
+Feedback
+• Equality Act Awareness
+Training
+
+Q3: Deepening Months 7-9
+Consumer Duty Deep-Dive
+• Real Case Studies —
+Complaint Failures
+• Cross-Team Session: AML DDI
+& Customer Ops
+• Fraud Awareness for
+Customer-Facing Staff
+• Reflective Complaint Case
+Review
+• Sanctions Awareness for
+Advisors
+
+Q4: Embedding Months 10-12
+Regulatory Update Briefing
+• Team Interaction Review
+Exercise
+• Complex Scenario
+Assessment
+• Annual AML Mandatory
+Refresher
+• Full Competency & Behaviour
+Assessment
+• Personal Development Plan
+(Y2)
+
+Abbr. Full Term AMLR Anti-Money Laundering Regulation AML Anti-Money Laundering KYC Know Your Customer CDD Customer Due Diligence EDD Enhanced Due Diligence PEP Politically Exposed Person LMS Learning Management System MLRO Money Laundering Reporting Officer CCO Chief Compliance Officer EBA European Banking Authority FATF Financial Action Task Force GDPR General Data Protection Regulation DPIA Data Protection Impact Assessment Explanation
+EU regulation (2024/1624) requiring function-specific, risk-based and documented AML training
+Laws, regulations and procedures to prevent criminals from disguising illegal funds as legitimate income
+Process of verifying client identity and assessing risk profile before and during a business relationship
+Identifying and verifying a customer's identity and assessing the risk they pose — a core KYC obligation
+Higher level of scrutiny applied to high-risk customers such as PEPs or those from high-risk jurisdictions
+Individual holding a prominent public position, requiring enhanced scrutiny due to elevated corruption risk
+Software platform used to assign, deliver, track and report on training and learning activities
+Designated person in a regulated firm responsible for receiving and assessing suspicious activity reports
+Senior executive overseeing the organisation's compliance programme and regulatory obligations
+EU regulatory agency issuing guidelines and technical standards for the banking sector, including AML/CFT
+Intergovernmental body setting global standards for combating money laundering and terrorist financing
+EU regulation governing the collection, processing and storage of personal data
+Process to identify and mitigate data privacy risks — required under GDPR for high-risk processing activities
